@@ -1,9 +1,8 @@
-server: express
+Server: express
 ORM: sequelize
-logger: pino
+Logger: pino
 
+Client: react
+Styles: tailwind
 
-client: react
-styles: tailwind
-
-app with REST API of todos
+App with REST API of todos
