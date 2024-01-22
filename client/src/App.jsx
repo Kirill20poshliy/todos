@@ -12,7 +12,7 @@ export default function App() {
   const [currentId, setCurrentId] = useState(0)
 
   const fetchTodos = () => {
-    fetch('http://localhost:8080/api/todos')
+    fetch('api/todos')
     .then(res => res.json())
     .then(data => {
       setTodos(data)

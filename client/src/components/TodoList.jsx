@@ -5,7 +5,7 @@ export default function TodoList(props) {
     const {todos, fetchTodos, editTodo} = props
 
     const deleteItem = (id) => {
-        fetch(`http://localhost:8080/api/todos/${id}`, {
+        fetch(`api/todos/${id}`, {
             method: 'DELETE',
         })
         .then(res => res.json())
@@ -17,7 +17,7 @@ export default function TodoList(props) {
     }
   
     const checkItem = (id) => {
-        fetch(`http://localhost:8080/api/todos/${id}`, {
+        fetch(`api/todos/${id}`, {
             method: 'PATCH',
         })
         .then(res => res.json())

@@ -8,7 +8,7 @@ export default function Modal(props) {
     const [value, setValue] = useState(title)
 
     const editHandler = () => {
-        fetch('http://localhost:8080/api/todos', {
+        fetch('api/todos', {
             method: 'PUT',
             body: JSON.stringify({name: value, id: idx}),
             headers: {

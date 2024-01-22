@@ -11,7 +11,7 @@ export default function AddTodo(props) {
             alert('Нельзя создать пустое задние!')
             return
         } 
-        fetch('http://localhost:8080/api/todos', {
+        fetch('api/todos', {
             method: 'POST',
             body: JSON.stringify({name: title}),
             headers: {

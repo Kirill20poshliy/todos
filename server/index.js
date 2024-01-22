@@ -19,6 +19,7 @@ const start = async () => {
         app.listen(PORT, () => {
             logger.info(`Server started on port ${PORT}`)
         })
+        await sequelize.sync()
         await connectDB()
     } catch (e) {
         logger.error(e)
